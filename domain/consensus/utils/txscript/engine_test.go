@@ -7,9 +7,9 @@ package txscript
 import (
 	"testing"
 
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
+	"github.com/catspa3/catspad/domain/consensus/utils/consensushashing"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
 )
 
 // TestBadPC sets the pc to a deliberately bad result then confirms that Step()

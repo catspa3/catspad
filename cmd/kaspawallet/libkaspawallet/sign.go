@@ -1,13 +1,13 @@
 package libkaspawallet
 
 import (
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/libkaspawallet/bip32"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/libkaspawallet/serialization"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/txscript"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/utxo"
-	"github.com/kaspanet/kaspad/domain/dagconfig"
+	"github.com/catspa3/catspad/cmd/kaspawallet/libkaspawallet/bip32"
+	"github.com/catspa3/catspad/cmd/kaspawallet/libkaspawallet/serialization"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/utils/consensushashing"
+	"github.com/catspa3/catspad/domain/consensus/utils/txscript"
+	"github.com/catspa3/catspad/domain/consensus/utils/utxo"
+	"github.com/catspa3/catspad/domain/dagconfig"
 	"github.com/pkg/errors"
 )
 

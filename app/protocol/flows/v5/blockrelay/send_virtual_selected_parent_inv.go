@@ -1,11 +1,11 @@
 package blockrelay
 
 import (
-	"github.com/kaspanet/kaspad/app/appmessage"
-	peerpkg "github.com/kaspanet/kaspad/app/protocol/peer"
-	"github.com/kaspanet/kaspad/domain"
-	"github.com/kaspanet/kaspad/infrastructure/config"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
+	"github.com/catspa3/catspad/app/appmessage"
+	peerpkg "github.com/catspa3/catspad/app/protocol/peer"
+	"github.com/catspa3/catspad/domain"
+	"github.com/catspa3/catspad/infrastructure/config"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/router"
 )
 
 // SendVirtualSelectedParentInvContext is the interface for the context needed for the SendVirtualSelectedParentInv flow.

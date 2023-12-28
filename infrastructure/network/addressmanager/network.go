@@ -7,7 +7,7 @@ package addressmanager
 import (
 	"net"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
+	"github.com/catspa3/catspad/app/appmessage"
 )
 
 var (

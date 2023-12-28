@@ -2,18 +2,18 @@ package main
 
 import (
 	nativeerrors "errors"
-	"github.com/kaspanet/kaspad/version"
+	"github.com/catspa3/catspad/version"
 	"math/rand"
 	"sync/atomic"
 	"time"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/cmd/kaspaminer/templatemanager"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/pow"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
-	"github.com/kaspanet/kaspad/util"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/cmd/kaspaminer/templatemanager"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/utils/consensushashing"
+	"github.com/catspa3/catspad/domain/consensus/utils/pow"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/router"
+	"github.com/catspa3/catspad/util"
 	"github.com/pkg/errors"
 )
 

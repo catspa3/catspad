@@ -12,15 +12,15 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	pb2 "github.com/kaspanet/kaspad/infrastructure/network/dnsseed/pb"
+	"github.com/catspa3/catspad/app/appmessage"
+	pb2 "github.com/catspa3/catspad/infrastructure/network/dnsseed/pb"
 	"google.golang.org/grpc"
 
-	"github.com/kaspanet/kaspad/util/mstime"
+	"github.com/catspa3/catspad/util/mstime"
 
-	"github.com/kaspanet/kaspad/domain/dagconfig"
+	"github.com/catspa3/catspad/domain/dagconfig"
 )
 
 const (

@@ -2,7 +2,7 @@ wire
 ====
 
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](https://choosealicense.com/licenses/isc/)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/kaspanet/kaspad/wire)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/catspa3/catspad/wire)
 =======
 
 Package wire implements the kaspa wire protocol.
@@ -32,13 +32,13 @@ to a remote node running a kaspa peer. Example syntax is:
 	// Use the most recent protocol version supported by the package and the
 	// main kaspa network.
 	pver := wire.ProtocolVersion
-	kaspanet := wire.Mainnet
+	catspa3 := wire.Mainnet
 
 	// Reads and validates the next kaspa message from conn using the
-	// protocol version pver and the kaspa network kaspanet. The returns
+	// protocol version pver and the kaspa network catspa3. The returns
 	// are a appmessage.Message, a []byte which contains the unmarshalled
 	// raw payload, and a possible error.
-	msg, rawPayload, err := wire.ReadMessage(conn, pver, kaspanet)
+	msg, rawPayload, err := wire.ReadMessage(conn, pver, catspa3)
 	if err != nil {
 		// Log and handle the error
 	}
@@ -57,15 +57,15 @@ from a remote peer is:
 	// Use the most recent protocol version supported by the package and the
 	// main bitcoin network.
 	pver := wire.ProtocolVersion
-	kaspanet := wire.Mainnet
+	catspa3 := wire.Mainnet
 
 	// Create a new getaddr kaspa message.
 	msg := wire.NewMsgGetAddr()
 
 	// Writes a kaspa message msg to conn using the protocol version
-	// pver, and the kaspa network kaspanet. The return is a possible
+	// pver, and the kaspa network catspa3. The return is a possible
 	// error.
-	err := wire.WriteMessage(conn, msg, pver, kaspanet)
+	err := wire.WriteMessage(conn, msg, pver, catspa3)
 	if err != nil {
 		// Log and handle the error
 	}

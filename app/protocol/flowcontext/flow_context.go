@@ -4,18 +4,18 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kaspanet/kaspad/util/mstime"
+	"github.com/catspa3/catspad/util/mstime"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
 
-	"github.com/kaspanet/kaspad/domain"
+	"github.com/catspa3/catspad/domain"
 
-	peerpkg "github.com/kaspanet/kaspad/app/protocol/peer"
-	"github.com/kaspanet/kaspad/infrastructure/config"
-	"github.com/kaspanet/kaspad/infrastructure/network/addressmanager"
-	"github.com/kaspanet/kaspad/infrastructure/network/connmanager"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/id"
+	peerpkg "github.com/catspa3/catspad/app/protocol/peer"
+	"github.com/catspa3/catspad/infrastructure/config"
+	"github.com/catspa3/catspad/infrastructure/network/addressmanager"
+	"github.com/catspa3/catspad/infrastructure/network/connmanager"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/id"
 )
 
 // OnNewBlockTemplateHandler is a handler function that's triggered when a new block template is available

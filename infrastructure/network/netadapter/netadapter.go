@@ -4,12 +4,12 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/infrastructure/config"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/id"
-	routerpkg "github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/server"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/server/grpcserver"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/infrastructure/config"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/id"
+	routerpkg "github.com/catspa3/catspad/infrastructure/network/netadapter/router"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/server"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/server/grpcserver"
 	"github.com/pkg/errors"
 )
 

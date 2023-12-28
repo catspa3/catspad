@@ -3,11 +3,11 @@ package mempool
 import (
 	"time"
 
-	"github.com/kaspanet/kaspad/domain/consensus/utils/constants"
+	"github.com/catspa3/catspad/domain/consensus/utils/constants"
 
-	"github.com/kaspanet/kaspad/util"
+	"github.com/catspa3/catspad/util"
 
-	"github.com/kaspanet/kaspad/domain/dagconfig"
+	"github.com/catspa3/catspad/domain/dagconfig"
 )
 
 const (

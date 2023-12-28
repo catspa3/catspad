@@ -1,7 +1,7 @@
 package appmessage
 
 import (
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
 )
 
 // MsgIBDBlockLocatorHighestHash represents a kaspa BlockLocatorHighestHash message

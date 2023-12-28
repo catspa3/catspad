@@ -3,7 +3,7 @@ package protowire
 import (
 	"math"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
+	"github.com/catspa3/catspad/app/appmessage"
 	"github.com/pkg/errors"
 )
 

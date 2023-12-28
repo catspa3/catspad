@@ -1,20 +1,20 @@
 package protocol
 
 import (
-	"github.com/kaspanet/kaspad/app/protocol/common"
-	"github.com/kaspanet/kaspad/app/protocol/flows/ready"
-	"github.com/kaspanet/kaspad/app/protocol/flows/v5"
+	"github.com/catspa3/catspad/app/protocol/common"
+	"github.com/catspa3/catspad/app/protocol/flows/ready"
+	"github.com/catspa3/catspad/app/protocol/flows/v5"
 	"sync"
 	"sync/atomic"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/app/protocol/flows/handshake"
-	peerpkg "github.com/kaspanet/kaspad/app/protocol/peer"
-	"github.com/kaspanet/kaspad/app/protocol/protocolerrors"
-	"github.com/kaspanet/kaspad/infrastructure/network/addressmanager"
-	"github.com/kaspanet/kaspad/infrastructure/network/connmanager"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter"
-	routerpkg "github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/app/protocol/flows/handshake"
+	peerpkg "github.com/catspa3/catspad/app/protocol/peer"
+	"github.com/catspa3/catspad/app/protocol/protocolerrors"
+	"github.com/catspa3/catspad/infrastructure/network/addressmanager"
+	"github.com/catspa3/catspad/infrastructure/network/connmanager"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter"
+	routerpkg "github.com/catspa3/catspad/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 

@@ -3,12 +3,12 @@ package protowire
 import (
 	"math"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/subnetworks"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/transactionid"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/utils/subnetworks"
+	"github.com/catspa3/catspad/domain/consensus/utils/transactionid"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/util/mstime"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/util/mstime"
 	"github.com/pkg/errors"
 )
 

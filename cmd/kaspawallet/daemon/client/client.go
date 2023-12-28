@@ -2,12 +2,12 @@ package client
 
 import (
 	"context"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/daemon/server"
+	"github.com/catspa3/catspad/cmd/kaspawallet/daemon/server"
 	"time"
 
 	"github.com/pkg/errors"
 
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/daemon/pb"
+	"github.com/catspa3/catspad/cmd/kaspawallet/daemon/pb"
 	"google.golang.org/grpc"
 )
 

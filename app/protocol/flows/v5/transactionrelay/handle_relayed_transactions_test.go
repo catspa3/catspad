@@ -2,24 +2,24 @@ package transactionrelay_test
 
 import (
 	"errors"
-	"github.com/kaspanet/kaspad/app/protocol/flowcontext"
-	"github.com/kaspanet/kaspad/app/protocol/flows/v5/transactionrelay"
+	"github.com/catspa3/catspad/app/protocol/flowcontext"
+	"github.com/catspa3/catspad/app/protocol/flows/v5/transactionrelay"
 	"strings"
 	"testing"
 
-	"github.com/kaspanet/kaspad/app/protocol/protocolerrors"
-	"github.com/kaspanet/kaspad/domain"
-	"github.com/kaspanet/kaspad/domain/consensus"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/testutils"
-	"github.com/kaspanet/kaspad/domain/miningmanager/mempool"
-	"github.com/kaspanet/kaspad/infrastructure/logger"
-	"github.com/kaspanet/kaspad/util/panics"
+	"github.com/catspa3/catspad/app/protocol/protocolerrors"
+	"github.com/catspa3/catspad/domain"
+	"github.com/catspa3/catspad/domain/consensus"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/utils/testutils"
+	"github.com/catspa3/catspad/domain/miningmanager/mempool"
+	"github.com/catspa3/catspad/infrastructure/logger"
+	"github.com/catspa3/catspad/util/panics"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/infrastructure/config"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/infrastructure/config"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/router"
 )
 
 type mocTransactionsRelayContext struct {

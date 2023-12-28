@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2018-2019 The kaspanet developers
+Copyright (c) 2018-2019 The catspa3 developers
 Copyright (c) 2013-2018 The btcsuite developers
 Copyright (c) 2015-2016 The Decred developers
 Copyright (c) 2013-2014 Conformal Systems LLC.

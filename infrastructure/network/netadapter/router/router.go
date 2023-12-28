@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
+	"github.com/catspa3/catspad/app/appmessage"
 	"github.com/pkg/errors"
 )
 

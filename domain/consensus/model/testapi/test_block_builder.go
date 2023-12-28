@@ -1,8 +1,8 @@
 package testapi
 
 import (
-	"github.com/kaspanet/kaspad/domain/consensus/model"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/model"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
 )
 
 // TestBlockBuilder adds to the main BlockBuilder methods required by tests
