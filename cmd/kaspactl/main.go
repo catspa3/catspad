@@ -5,6 +5,7 @@ import (
 	"github.com/catspa3/catspad/version"
 	"os"
 	"time"
+	"encoding/json"
 
 	"github.com/catspa3/catspad/infrastructure/network/netadapter/server/grpcserver/protowire"
 
@@ -60,7 +61,26 @@ func main() {
 	select {
 	case responseString := <-responseChan:
 		prettyResponseString := prettifyResponse(responseString)
-		fmt.Println(prettyResponseString)
+
+	//	fmt.Println(prettyResponseString)
+
+		data := make(map[string]interface{})
+		err := json.Unmarshal([]byte(prettyResponseString), &data)
+		if err != nil {
+			printErrorAndExit(err.Error())
+		}
+
+		api, ok := data["getCoinSupplyResponse"]
+		result := api.(map[string]interface{})
+		if ok {
+			fmt.Println(`{`)
+			fmt.Println(`    "getCoinSupplyResponse": {`)
+			fmt.Println(`        "maxPaw: "`, result["maxSompi"].(string) + ",")
+			fmt.Println(`        "circulatingPaw: "`, result["circulatingSompi"].(string) + ",")
+			fmt.Println(`        "error: "`, result["error"])
+			fmt.Println(`    }`)
+			fmt.Println(`}`)
+		}
 	case <-time.After(timeout):
 		printErrorAndExit(fmt.Sprintf("timeout of %s has been exceeded", timeout))
 	}

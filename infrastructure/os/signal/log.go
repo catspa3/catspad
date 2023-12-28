@@ -8,4 +8,4 @@ import (
 	"github.com/catspa3/catspad/infrastructure/logger"
 )
 
-var kasdLog = logger.RegisterSubSystem("KASD")
+var kasdLog = logger.RegisterSubSystem("CATSD")

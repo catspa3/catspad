@@ -17,14 +17,14 @@ import (
 )
 
 const (
-	defaultLogFilename          = "kaspaminer.log"
-	defaultErrLogFilename       = "kaspaminer_err.log"
+	defaultLogFilename          = "catspaminer.log"
+	defaultErrLogFilename       = "catspaminer_err.log"
 	defaultTargetBlockRateRatio = 2.0
 )
 
 var (
 	// Default configuration options
-	defaultAppDir     = util.AppDir("kaspaminer", false)
+	defaultAppDir     = util.AppDir("catspaminer", false)
 	defaultLogFile    = filepath.Join(defaultAppDir, defaultLogFilename)
 	defaultErrLogFile = filepath.Join(defaultAppDir, defaultErrLogFilename)
 	defaultRPCServer  = "localhost"

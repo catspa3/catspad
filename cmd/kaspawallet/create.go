@@ -32,8 +32,8 @@ func create(conf *createConfig) error {
 	}
 
 	fmt.Printf("Notice the above is neither a secret key to your wallet " +
-		"(use \"kaspawallet dump-unencrypted-data\" to see a secret seed phrase) " +
-		"nor a wallet public address (use \"kaspawallet new-address\" to create and see one)\n\n")
+		"(use \"catspawallet dump-unencrypted-data\" to see a secret seed phrase) " +
+		"nor a wallet public address (use \"catspawallet new-address\" to create and see one)\n\n")
 
 	extendedPublicKeys := make([]string, conf.NumPrivateKeys, conf.NumPublicKeys)
 	copy(extendedPublicKeys, signerExtendedPublicKeys)

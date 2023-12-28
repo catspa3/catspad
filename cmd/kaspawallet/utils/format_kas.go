@@ -15,7 +15,8 @@ import (
 func FormatKas(amount uint64) string {
 	res := "                   "
 	if amount > 0 {
-		res = fmt.Sprintf("%19.8f", float64(amount)/constants.SompiPerKaspa)
+	//	res = fmt.Sprintf("%19.8f", float64(amount)/constants.SompiPerKaspa)
+		res = fmt.Sprintf("%23.4f", float64(amount)/constants.SompiPerKaspa)
 	}
 	return res
 }
@@ -34,7 +35,8 @@ func KasToSompi(amount string) (uint64, error) {
 	amountStr := ""
 
 	if constants.SompiPerKaspa%10 != 0 {
-		return 0, errors.Errorf("Unable to convert to sompi when SompiPerKaspa is not a multiple of 10")
+	//	return 0, errors.Errorf("Unable to convert to sompi when SompiPerKaspa is not a multiple of 10")
+		return 0, errors.Errorf("Unable to convert to paw when PawPerKaspa is not a multiple of 10")
 	}
 
 	decimalPlaces := int(math.Log10(constants.SompiPerKaspa))

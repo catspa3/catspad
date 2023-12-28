@@ -22,7 +22,7 @@ import (
 )
 
 var (
-	defaultAppDir = util.AppDir("kaspawallet", false)
+	defaultAppDir = util.AppDir("catspawallet", false)
 )
 
 // LastVersion is the most up to date file format version

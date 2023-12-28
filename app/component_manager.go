@@ -55,11 +55,11 @@ func (a *ComponentManager) Start() {
 func (a *ComponentManager) Stop() {
 	// Make sure this only happens once.
 	if atomic.AddInt32(&a.shutdown, 1) != 1 {
-		log.Infof("Kaspad is already in the process of shutting down")
+		log.Infof("Catspad is already in the process of shutting down")
 		return
 	}
 
-	log.Warnf("Kaspad shutting down")
+	log.Warnf("Catspad shutting down")
 
 	a.connectionManager.Stop()
 

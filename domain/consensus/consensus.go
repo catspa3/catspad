@@ -1136,12 +1136,21 @@ func (s *consensus) isNearlySyncedNoLock() (bool, error) {
 	now := mstime.Now().UnixMilliseconds()
 	// As a heuristic, we allow the node to mine if he is likely to be within the current DAA window of fully synced nodes.
 	// Such blocks contribute to security by maintaining the current difficulty despite possibly being slightly out of sync.
+
+	/*
+	fmt.Printf("now: %d\n", now)
+	fmt.Printf("virtual time: %d\n", virtualSelectedParentHeader.TimeInMilliseconds())
+	fmt.Printf("diff: %d\n", now - virtualSelectedParentHeader.TimeInMilliseconds())
+	fmt.Printf("expected: %d\n", s.expectedDAAWindowDurationInMilliseconds)
+	*/
 	if now-virtualSelectedParentHeader.TimeInMilliseconds() < s.expectedDAAWindowDurationInMilliseconds {
+	//	fmt.Printf("The selected tip timestamp is recent (%d), so IsNearlySynced returns true\n", virtualSelectedParentHeader.TimeInMilliseconds())
 		log.Debugf("The selected tip timestamp is recent (%d), so IsNearlySynced returns true",
 			virtualSelectedParentHeader.TimeInMilliseconds())
 		return true, nil
 	}
 
+//	fmt.Printf("The selected tip timestamp is old (%d), so IsNearlySynced returns false\n", virtualSelectedParentHeader.TimeInMilliseconds())
 	log.Debugf("The selected tip timestamp is old (%d), so IsNearlySynced returns false",
 		virtualSelectedParentHeader.TimeInMilliseconds())
 	return false, nil

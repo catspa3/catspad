@@ -80,6 +80,8 @@ func (app *kaspadApp) main(startedChan chan<- struct{}) error {
 	interrupt := signal.InterruptListener()
 	defer log.Info("Shutdown complete")
 
+	logoCatspa()
+
 	// Show version at startup.
 	log.Infof("Version %s", version.Version())
 
