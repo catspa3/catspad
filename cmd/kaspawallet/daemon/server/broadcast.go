@@ -2,12 +2,12 @@ package server
 
 import (
 	"context"
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/daemon/pb"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/libkaspawallet"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/libkaspawallet/serialization"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/infrastructure/network/rpcclient"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/cmd/kaspawallet/daemon/pb"
+	"github.com/catspa3/catspad/cmd/kaspawallet/libkaspawallet"
+	"github.com/catspa3/catspad/cmd/kaspawallet/libkaspawallet/serialization"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/infrastructure/network/rpcclient"
 	"github.com/pkg/errors"
 	"time"
 )

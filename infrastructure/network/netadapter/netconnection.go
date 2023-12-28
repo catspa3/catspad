@@ -2,13 +2,13 @@ package netadapter
 
 import (
 	"fmt"
-	"github.com/kaspanet/kaspad/app/appmessage"
-	routerpkg "github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
+	"github.com/catspa3/catspad/app/appmessage"
+	routerpkg "github.com/catspa3/catspad/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 	"sync/atomic"
 
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/id"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/server"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/id"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/server"
 )
 
 // NetConnection is a wrapper to a server connection for use by services external to NetAdapter

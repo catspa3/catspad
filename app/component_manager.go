@@ -4,22 +4,22 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
 
-	"github.com/kaspanet/kaspad/domain/miningmanager/mempool"
+	"github.com/catspa3/catspad/domain/miningmanager/mempool"
 
-	"github.com/kaspanet/kaspad/app/protocol"
-	"github.com/kaspanet/kaspad/app/rpc"
-	"github.com/kaspanet/kaspad/domain"
-	"github.com/kaspanet/kaspad/domain/consensus"
-	"github.com/kaspanet/kaspad/domain/utxoindex"
-	"github.com/kaspanet/kaspad/infrastructure/config"
-	infrastructuredatabase "github.com/kaspanet/kaspad/infrastructure/db/database"
-	"github.com/kaspanet/kaspad/infrastructure/network/addressmanager"
-	"github.com/kaspanet/kaspad/infrastructure/network/connmanager"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/id"
-	"github.com/kaspanet/kaspad/util/panics"
+	"github.com/catspa3/catspad/app/protocol"
+	"github.com/catspa3/catspad/app/rpc"
+	"github.com/catspa3/catspad/domain"
+	"github.com/catspa3/catspad/domain/consensus"
+	"github.com/catspa3/catspad/domain/utxoindex"
+	"github.com/catspa3/catspad/infrastructure/config"
+	infrastructuredatabase "github.com/catspa3/catspad/infrastructure/db/database"
+	"github.com/catspa3/catspad/infrastructure/network/addressmanager"
+	"github.com/catspa3/catspad/infrastructure/network/connmanager"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/id"
+	"github.com/catspa3/catspad/util/panics"
 )
 
 // ComponentManager is a wrapper for all the kaspad services

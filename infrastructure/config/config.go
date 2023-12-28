@@ -18,21 +18,21 @@ import (
 
 	"github.com/btcsuite/go-socks/socks"
 	"github.com/jessevdk/go-flags"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/dagconfig"
-	"github.com/kaspanet/kaspad/infrastructure/logger"
-	"github.com/kaspanet/kaspad/util"
-	"github.com/kaspanet/kaspad/util/network"
-	"github.com/kaspanet/kaspad/version"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/dagconfig"
+	"github.com/catspa3/catspad/infrastructure/logger"
+	"github.com/catspa3/catspad/util"
+	"github.com/catspa3/catspad/util/network"
+	"github.com/catspa3/catspad/version"
 	"github.com/pkg/errors"
 )
 
 const (
-	defaultConfigFilename      = "kaspad.conf"
+	defaultConfigFilename      = "catspad.conf"
 	defaultLogLevel            = "info"
 	defaultLogDirname          = "logs"
-	defaultLogFilename         = "kaspad.log"
-	defaultErrLogFilename      = "kaspad_err.log"
+	defaultLogFilename         = "catspad.log"
+	defaultErrLogFilename      = "catspad_err.log"
 	defaultTargetOutboundPeers = 8
 	defaultMaxInboundPeers     = 117
 	defaultBanDuration         = time.Hour * 24
@@ -51,14 +51,14 @@ const (
 	//DefaultMaxOrphanTxSize is the default maximum size for an orphan transaction
 	DefaultMaxOrphanTxSize  = 100_000
 	defaultSigCacheMaxSize  = 100_000
-	sampleConfigFilename    = "sample-kaspad.conf"
+	sampleConfigFilename    = "sample-catspad.conf"
 	defaultMaxUTXOCacheSize = 5_000_000_000
 	defaultProtocolVersion  = 5
 )
 
 var (
 	// DefaultAppDir is the default home directory for kaspad.
-	DefaultAppDir = util.AppDir("kaspad", false)
+	DefaultAppDir = util.AppDir("catspad", false)
 
 	defaultConfigFile  = filepath.Join(DefaultAppDir, defaultConfigFilename)
 	defaultDataDir     = filepath.Join(DefaultAppDir)

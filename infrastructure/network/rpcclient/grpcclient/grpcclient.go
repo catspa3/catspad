@@ -2,10 +2,10 @@ package grpcclient
 
 import (
 	"context"
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/server/grpcserver"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/router"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/server/grpcserver"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/server/grpcserver/protowire"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/encoding/gzip"

@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kaspanet/kaspad/infrastructure/db/database"
+	"github.com/catspa3/catspad/infrastructure/db/database"
 )
 
 func TestTransactionCloseErrors(t *testing.T) {

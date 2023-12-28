@@ -3,18 +3,18 @@ package consensushashing_test
 import (
 	"encoding/hex"
 	"fmt"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/subnetworks"
+	"github.com/catspa3/catspad/domain/consensus/utils/subnetworks"
 	"testing"
 
-	"github.com/kaspanet/go-secp256k1"
+	"github.com/catspa3/go-secp256k1"
 
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/txscript"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/utxo"
-	"github.com/kaspanet/kaspad/domain/dagconfig"
-	"github.com/kaspanet/kaspad/util"
+	"github.com/catspa3/catspad/domain/consensus/utils/consensushashing"
+	"github.com/catspa3/catspad/domain/consensus/utils/txscript"
+	"github.com/catspa3/catspad/domain/consensus/utils/utxo"
+	"github.com/catspa3/catspad/domain/dagconfig"
+	"github.com/catspa3/catspad/util"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
 )
 
 // shortened versions of SigHash types to fit in single line of test case

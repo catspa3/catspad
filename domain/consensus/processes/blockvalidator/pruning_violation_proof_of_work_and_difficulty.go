@@ -1,13 +1,13 @@
 package blockvalidator
 
 import (
-	"github.com/kaspanet/kaspad/domain/consensus/model"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/ruleerrors"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/pow"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/virtual"
-	"github.com/kaspanet/kaspad/infrastructure/db/database"
-	"github.com/kaspanet/kaspad/infrastructure/logger"
+	"github.com/catspa3/catspad/domain/consensus/model"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/ruleerrors"
+	"github.com/catspa3/catspad/domain/consensus/utils/pow"
+	"github.com/catspa3/catspad/domain/consensus/utils/virtual"
+	"github.com/catspa3/catspad/infrastructure/db/database"
+	"github.com/catspa3/catspad/infrastructure/logger"
 	"github.com/pkg/errors"
 )
 

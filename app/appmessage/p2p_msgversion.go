@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/version"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/version"
 
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/id"
-	"github.com/kaspanet/kaspad/util/mstime"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/id"
+	"github.com/catspa3/catspad/util/mstime"
 )
 
 // MaxUserAgentLen is the maximum allowed length for the user agent field in a

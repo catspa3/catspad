@@ -1,6 +1,6 @@
 package model
 
-import "github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+import "github.com/catspa3/catspad/domain/consensus/model/externalapi"
 
 // ReachabilityManager maintains a structure that allows to answer
 // reachability queries in sub-linear time

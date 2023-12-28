@@ -8,9 +8,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/kaspanet/kaspad/domain/consensus/utils/constants"
+	"github.com/catspa3/catspad/domain/consensus/utils/constants"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
 )
 
 // These are the constants specified for maximums in individual scripts.

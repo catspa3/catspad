@@ -2,12 +2,12 @@ package rpchandlers
 
 import (
 	"encoding/json"
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/app/protocol/protocolerrors"
-	"github.com/kaspanet/kaspad/app/rpc/rpccontext"
-	"github.com/kaspanet/kaspad/domain/consensus/ruleerrors"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/app/protocol/protocolerrors"
+	"github.com/catspa3/catspad/app/rpc/rpccontext"
+	"github.com/catspa3/catspad/domain/consensus/ruleerrors"
+	"github.com/catspa3/catspad/domain/consensus/utils/consensushashing"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 

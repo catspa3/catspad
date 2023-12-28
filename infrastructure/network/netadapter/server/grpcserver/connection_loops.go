@@ -2,18 +2,18 @@ package grpcserver
 
 import (
 	"github.com/davecgh/go-spew/spew"
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/infrastructure/logger"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/infrastructure/logger"
 	"io"
 	"os"
 	"strconv"
 	"sync"
 	"time"
 
-	routerpkg "github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
+	routerpkg "github.com/catspa3/catspad/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/server/grpcserver/protowire"
 )
 
 func (c *gRPCConnection) connectionLoops() error {

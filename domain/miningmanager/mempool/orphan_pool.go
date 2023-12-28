@@ -3,16 +3,16 @@ package mempool
 import (
 	"fmt"
 
-	"github.com/kaspanet/kaspad/domain/consensus/utils/constants"
+	"github.com/catspa3/catspad/domain/consensus/utils/constants"
 
-	"github.com/kaspanet/kaspad/domain/consensus/ruleerrors"
+	"github.com/catspa3/catspad/domain/consensus/ruleerrors"
 
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
+	"github.com/catspa3/catspad/domain/consensus/utils/consensushashing"
 
-	"github.com/kaspanet/kaspad/domain/consensus/utils/utxo"
+	"github.com/catspa3/catspad/domain/consensus/utils/utxo"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/miningmanager/mempool/model"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/miningmanager/mempool/model"
 	"github.com/pkg/errors"
 )
 

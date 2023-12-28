@@ -1,4 +1,4 @@
-module github.com/kaspanet/kaspad
+module github.com/catspa3/catspad
 
 go 1.18
 
@@ -6,13 +6,13 @@ require (
 	github.com/btcsuite/btcutil v1.0.2
 	github.com/btcsuite/go-socks v0.0.0-20170105172521-4720035b7bfd
 	github.com/btcsuite/winsvc v1.0.0
+	github.com/catspa3/go-muhash v0.0.0-20231228182639-f8531606034e
+	github.com/catspa3/go-secp256k1 v0.0.0-20231228185229-712d8abad0d2
 	github.com/davecgh/go-spew v1.1.1
 	github.com/gofrs/flock v0.8.1
 	github.com/golang/protobuf v1.5.2
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/jrick/logrotate v1.0.0
-	github.com/kaspanet/go-muhash v0.0.4
-	github.com/kaspanet/go-secp256k1 v0.0.7
 	github.com/pkg/errors v0.9.1
 	github.com/syndtr/goleveldb v1.0.1-0.20190923125748-758128399b1d
 	github.com/tyler-smith/go-bip39 v1.1.0

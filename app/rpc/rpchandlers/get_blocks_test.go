@@ -5,18 +5,18 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model"
+	"github.com/catspa3/catspad/domain/consensus/model"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/app/rpc/rpccontext"
-	"github.com/kaspanet/kaspad/app/rpc/rpchandlers"
-	"github.com/kaspanet/kaspad/domain/consensus"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/model/testapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/hashes"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/testutils"
-	"github.com/kaspanet/kaspad/domain/miningmanager"
-	"github.com/kaspanet/kaspad/infrastructure/config"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/app/rpc/rpccontext"
+	"github.com/catspa3/catspad/app/rpc/rpchandlers"
+	"github.com/catspa3/catspad/domain/consensus"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/model/testapi"
+	"github.com/catspa3/catspad/domain/consensus/utils/hashes"
+	"github.com/catspa3/catspad/domain/consensus/utils/testutils"
+	"github.com/catspa3/catspad/domain/miningmanager"
+	"github.com/catspa3/catspad/infrastructure/config"
 )
 
 type fakeDomain struct {

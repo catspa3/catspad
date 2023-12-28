@@ -10,7 +10,7 @@
 syntax = "proto3";
 package protowire;
 
-option go_package = "github.com/kaspanet/kaspad/protowire";
+option go_package = "github.com/catspa3/catspad/protowire";
 
 // RPCError represents a generic non-internal error.
 //

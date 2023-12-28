@@ -6,8 +6,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/daemon/client"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/daemon/pb"
+	"github.com/catspa3/catspad/cmd/kaspawallet/daemon/client"
+	"github.com/catspa3/catspad/cmd/kaspawallet/daemon/pb"
 	"github.com/pkg/errors"
 )
 

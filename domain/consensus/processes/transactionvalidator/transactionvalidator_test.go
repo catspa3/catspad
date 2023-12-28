@@ -1,21 +1,21 @@
 package transactionvalidator_test
 
 import (
-	"github.com/kaspanet/go-secp256k1"
-	"github.com/kaspanet/kaspad/domain/consensus"
-	"github.com/kaspanet/kaspad/domain/consensus/ruleerrors"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/testutils"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/txscript"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/utxo"
-	"github.com/kaspanet/kaspad/util"
+	"github.com/catspa3/go-secp256k1"
+	"github.com/catspa3/catspad/domain/consensus"
+	"github.com/catspa3/catspad/domain/consensus/ruleerrors"
+	"github.com/catspa3/catspad/domain/consensus/utils/consensushashing"
+	"github.com/catspa3/catspad/domain/consensus/utils/testutils"
+	"github.com/catspa3/catspad/domain/consensus/utils/txscript"
+	"github.com/catspa3/catspad/domain/consensus/utils/utxo"
+	"github.com/catspa3/catspad/util"
 
 	"testing"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/constants"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/subnetworks"
+	"github.com/catspa3/catspad/domain/consensus/model"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/utils/constants"
+	"github.com/catspa3/catspad/domain/consensus/utils/subnetworks"
 	"github.com/pkg/errors"
 )
 

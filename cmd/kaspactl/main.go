@@ -2,16 +2,16 @@ package main
 
 import (
 	"fmt"
-	"github.com/kaspanet/kaspad/version"
+	"github.com/catspa3/catspad/version"
 	"os"
 	"time"
 
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/server/grpcserver/protowire"
 
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/encoding/protojson"
 
-	"github.com/kaspanet/kaspad/infrastructure/network/rpcclient/grpcclient"
+	"github.com/catspa3/catspad/infrastructure/network/rpcclient/grpcclient"
 )
 
 func main() {

@@ -3,16 +3,16 @@ package standalone
 import (
 	"sync"
 
-	"github.com/kaspanet/kaspad/app/protocol/common"
-	"github.com/kaspanet/kaspad/util/mstime"
+	"github.com/catspa3/catspad/app/protocol/common"
+	"github.com/catspa3/catspad/util/mstime"
 
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/id"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/id"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/router"
 
-	"github.com/kaspanet/kaspad/infrastructure/config"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter"
+	"github.com/catspa3/catspad/infrastructure/config"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter"
 
 	"github.com/pkg/errors"
 )

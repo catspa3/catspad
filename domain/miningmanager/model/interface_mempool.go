@@ -1,8 +1,8 @@
 package model
 
 import (
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/ruleerrors"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/ruleerrors"
 )
 
 // Mempool maintains a set of known transactions that

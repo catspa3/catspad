@@ -1,11 +1,11 @@
 package rpchandlers
 
 import (
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/app/rpc/rpccontext"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
-	"github.com/kaspanet/kaspad/domain/miningmanager/mempool"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/app/rpc/rpccontext"
+	"github.com/catspa3/catspad/domain/consensus/utils/consensushashing"
+	"github.com/catspa3/catspad/domain/miningmanager/mempool"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 

@@ -1,9 +1,9 @@
 package transactionvalidator
 
 import (
-	"github.com/kaspanet/kaspad/domain/consensus/model"
-	"github.com/kaspanet/kaspad/domain/consensus/model/testapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/txscript"
+	"github.com/catspa3/catspad/domain/consensus/model"
+	"github.com/catspa3/catspad/domain/consensus/model/testapi"
+	"github.com/catspa3/catspad/domain/consensus/utils/txscript"
 )
 
 type testTransactionValidator struct {

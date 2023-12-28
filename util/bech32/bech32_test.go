@@ -5,7 +5,7 @@
 package bech32_test
 
 import (
-	"github.com/kaspanet/kaspad/util/bech32"
+	"github.com/catspa3/catspad/util/bech32"
 	"testing"
 )
 

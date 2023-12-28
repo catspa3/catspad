@@ -1,9 +1,9 @@
 package protowire
 
 import (
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/util/mstime"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/util/mstime"
 	"github.com/pkg/errors"
 	"math"
 	"math/big"

@@ -7,13 +7,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/kaspanet/kaspad/infrastructure/config"
+	"github.com/catspa3/catspad/infrastructure/config"
 
-	"github.com/kaspanet/kaspad/util"
+	"github.com/catspa3/catspad/util"
 	"github.com/pkg/errors"
 
 	"github.com/jessevdk/go-flags"
-	"github.com/kaspanet/kaspad/version"
+	"github.com/catspa3/catspad/version"
 )
 
 const (

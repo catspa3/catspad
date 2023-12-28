@@ -1,16 +1,16 @@
 package transactionrelay
 
 import (
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/app/protocol/common"
-	"github.com/kaspanet/kaspad/app/protocol/flowcontext"
-	"github.com/kaspanet/kaspad/app/protocol/protocolerrors"
-	"github.com/kaspanet/kaspad/domain"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
-	"github.com/kaspanet/kaspad/domain/miningmanager/mempool"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
+	"github.com/catspa3/catspad/app/appmessage"
+	"github.com/catspa3/catspad/app/protocol/common"
+	"github.com/catspa3/catspad/app/protocol/flowcontext"
+	"github.com/catspa3/catspad/app/protocol/protocolerrors"
+	"github.com/catspa3/catspad/domain"
+	"github.com/catspa3/catspad/domain/consensus/model/externalapi"
+	"github.com/catspa3/catspad/domain/consensus/utils/consensushashing"
+	"github.com/catspa3/catspad/domain/miningmanager/mempool"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter"
+	"github.com/catspa3/catspad/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 
