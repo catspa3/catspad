@@ -71,8 +71,8 @@ func main() {
 		}
 
 		api, ok := data["getCoinSupplyResponse"]
-		result := api.(map[string]interface{})
 		if ok {
+			result := api.(map[string]interface{})
 			fmt.Println(`{`)
 			fmt.Println(`    "getCoinSupplyResponse": {`)
 			fmt.Println(`        "maxPaw: "`, result["maxSompi"].(string) + ",")
@@ -80,6 +80,8 @@ func main() {
 			fmt.Println(`        "error: "`, result["error"])
 			fmt.Println(`    }`)
 			fmt.Println(`}`)
+		} else {
+			fmt.Println(prettyResponseString)
 		}
 	case <-time.After(timeout):
 		printErrorAndExit(fmt.Sprintf("timeout of %s has been exceeded", timeout))
