@@ -23,6 +23,7 @@ import (
 	"github.com/catspa3/catspad/infrastructure/logger"
 	"github.com/catspa3/catspad/util"
 	"github.com/catspa3/catspad/util/network"
+	"github.com/catspa3/catspad/util/storedb"
 	"github.com/catspa3/catspad/version"
 	"github.com/pkg/errors"
 )
@@ -129,6 +130,7 @@ type Flags struct {
 	ProtocolVersion                 uint32        `long:"protocol-version" description:"Use non default p2p protocol version"`
 	NetworkFlags
 	ServiceOptions *ServiceOptions
+	StoreTxForExplorer              bool          `long:"store" hidden:"true"`
 }
 
 // Config defines the configuration options for kaspad.
@@ -231,6 +233,11 @@ func LoadConfig() (*Config, error) {
 		if ok := errors.As(err, &flagsErr); ok && flagsErr.Type == flags.ErrHelp {
 			return nil, err
 		}
+	}
+
+	if preCfg.StoreTxForExplorer {
+		storedb.OpenDBI()
+		storedb.Store = true
 	}
 
 	appName := filepath.Base(os.Args[0])
