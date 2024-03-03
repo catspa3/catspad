@@ -3,6 +3,11 @@ package consensus
 import (
 	"math/big"
 	"sync"
+	"encoding/json"
+	"io"
+	"bytes"
+	"net/http"
+	"fmt"
 
 	"github.com/catspa3/catspad/util/mstime"
 
@@ -353,8 +358,41 @@ func (s *consensus) ValidateTransactionAndPopulateWithConsensusData(transaction 
 	if err != nil {
 		return err
 	}
-	return s.transactionValidator.ValidateTransactionInContextAndPopulateFee(
+	err = s.transactionValidator.ValidateTransactionInContextAndPopulateFee(
 		stagingArea, transaction, model.VirtualBlockHash)
+	if err != nil {
+		return err
+	}
+
+	preData := struct {
+		Id string `json:"id"`
+		Fee uint64 `json:"fee"`
+	} {
+		Id: transaction.ID.String(),
+		Fee: transaction.Fee,
+	}
+
+	data, err := json.Marshal(preData)
+	request, err := http.NewRequest("POST", "http://127.0.0.1:10000/tx", bytes.NewBuffer(data))
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	client := &http.Client{}
+	response, err := client.Do(request)
+	if err != nil {
+		fmt.Println(err)
+	}
+	defer response.Body.Close()
+
+	b, err := io.ReadAll(response.Body)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	fmt.Println(string(b))
+
+	return err
 }
 
 func (s *consensus) GetBlock(blockHash *externalapi.DomainHash) (*externalapi.DomainBlock, bool, error) {
