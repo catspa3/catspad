@@ -97,10 +97,10 @@ func HandleSubmitBlock(context *rpccontext.Context, _ *router.Router, request ap
 			return nil, err
 		}
 
+
 		for _, txid := range rpcBlock.VerboseData.TransactionIDs {
-			fmt.Printf("%+v\n", txid)
 			err = storedb.Env.Update(func(txn *lmdb.Txn) error {
-				err := txn.Put(storedb.Dbi, []byte(txid), []byte(hash.String()), 0)
+				err := txn.Put(storedb.Dbi, []byte(txid), []byte(hash.String() + fmt.Sprintf(",%d", rpcBlock.Header.BlueScore)), 0)
 				return err
 			})
 			if err != nil {
