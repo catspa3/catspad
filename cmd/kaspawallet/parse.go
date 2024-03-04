@@ -78,7 +78,7 @@ func parse(conf *parseConfig) error {
 		}
 		fmt.Println()
 
-		fmt.Printf("Fee:\t%d Sompi\n\n", allInputSompi-allOutputSompi)
+		fmt.Printf("Fee:\t%d Paw\n\n", allInputSompi-allOutputSompi)
 	}
 
 	return nil
