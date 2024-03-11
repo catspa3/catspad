@@ -10,6 +10,7 @@ import (
 	"fmt"
 
 	"github.com/catspa3/catspad/util/mstime"
+	"github.com/catspa3/catspad/util/storedb"
 
 	"github.com/catspa3/catspad/domain/consensus/database"
 	"github.com/catspa3/catspad/domain/consensus/model"
@@ -362,6 +363,10 @@ func (s *consensus) ValidateTransactionAndPopulateWithConsensusData(transaction 
 		stagingArea, transaction, model.VirtualBlockHash)
 	if err != nil {
 		return err
+	}
+
+	if !storedb.Store {
+		return nil
 	}
 
 	preData := struct {

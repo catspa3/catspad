@@ -52,17 +52,4 @@ func OpenDBI() {
 	if err != nil {
 		loog.Println(err)
 	}
-
-	/*
-	err = Env.View(func(txn *lmdb.Txn) error {
-		v, err := txn.Get(Dbi, []byte("aaa"))
-		if err != nil {
-			loog.Println("Get fail:", err)
-			return err
-		}
-
-		loog.Println(string(v))
-		return nil
-	})
-	*/
 }

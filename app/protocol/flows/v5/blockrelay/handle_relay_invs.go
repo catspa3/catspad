@@ -15,6 +15,10 @@ import (
 	"github.com/catspa3/catspad/infrastructure/config"
 	"github.com/catspa3/catspad/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
+	"github.com/bmatsuo/lmdb-go/lmdb"
+	"github.com/catspa3/catspad/util/storedb"
+
+	"fmt"
 )
 
 // orphanResolutionRange is the maximum amount of blockLocator hashes
@@ -239,6 +243,20 @@ func (flow *handleRelayInvsFlow) start() error {
 		err = flow.OnNewBlock(block)
 		if err != nil {
 			return err
+		}
+
+		if storedb.Store {
+			for _, transaction := range block.Transactions {
+				txid := consensushashing.TransactionID(transaction).String()
+
+				err = storedb.Env.Update(func(txn *lmdb.Txn) error {
+					err := txn.Put(storedb.Dbi, []byte(txid), []byte(inv.Hash.String() + fmt.Sprintf(",%d", block.Header.BlueScore())), 0)
+					return err
+				})
+				if err != nil {
+					fmt.Println(err)
+				}
+			}
 		}
 	}
 }
