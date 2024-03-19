@@ -19,6 +19,8 @@ import (
 
 func main() {
 	defer panics.HandlePanic(log, "MAIN", nil)
+	logoCats()
+
 	interrupt := signal.InterruptListener()
 
 	cfg, err := parseConfig()
