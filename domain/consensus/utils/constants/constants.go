@@ -13,12 +13,12 @@ const (
 	MaxScriptPublicKeyVersion uint16 = 0
 
 	// SompiPerKaspa is the number of sompi in one kaspa (1 KAS).
-	// SompiPerKaspa = 100_000_000
-	SompiPerKaspa = 10_000
+	SompiPerKaspa = 100_000_000
+	// SompiPerKaspa = 10_000
 
 	// MaxSompi is the maximum transaction amount allowed in sompi.
-	// MaxSompi = uint64(29_000_000_000 * SompiPerKaspa)
-	MaxSompi = uint64(290_000_000_000_000 * SompiPerKaspa)
+	MaxSompi = uint64(29_000_000_000 * SompiPerKaspa)
+	// MaxSompi = uint64(290_000_000_000_000 * SompiPerKaspa)
 
 	// MaxTxInSequenceNum is the maximum sequence number the sequence field
 	// of a transaction input can be.
