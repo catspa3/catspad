@@ -34,19 +34,19 @@ const (
 func (u AmountUnit) String() string {
 	switch u {
 	case AmountMegaKAS:
-		return "MCatspa"
+		return "MCats"
 	case AmountKiloKAS:
-		return "kCatspa"
+		return "kCats"
 	case AmountKAS:
-		return "Catspa"
+		return "Cats"
 	case AmountMilliKAS:
-		return "mCatspa"
+		return "mCats"
 	case AmountMicroKAS:
-		return "μCatspa"
+		return "μCats"
 	case AmountSompi:
 		return "Sompi"
 	default:
-		return "1e" + strconv.FormatInt(int64(u), 10) + " Catspa"
+		return "1e" + strconv.FormatInt(int64(u), 10) + " Cats"
 	}
 }
 
@@ -84,7 +84,7 @@ func NewAmount(f float64) (Amount, error) {
 	case math.IsInf(f, 1):
 		fallthrough
 	case math.IsInf(f, -1):
-		return 0, errors.New("invalid catspa amount")
+		return 0, errors.New("invalid cats amount")
 	}
 
 	return round(f * constants.SompiPerKaspa), nil

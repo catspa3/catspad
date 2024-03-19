@@ -209,7 +209,7 @@ func (p *Params) PruningDepth() uint64 {
 // MainnetParams defines the network parameters for the main Kaspa network.
 var MainnetParams = Params{
 	K:           defaultGHOSTDAGK,
-	Name:        "catspa-mainnet",
+	Name:        "cats-mainnet",
 	Net:         appmessage.Mainnet,
 	RPCPort:     "16110",
 	DefaultPort: "16111",
@@ -217,9 +217,9 @@ var MainnetParams = Params{
 		// This DNS seeder is run by Wolfie
 		"mainnet-dnsseed.kas.pa",
 		// This DNS seeder is run by Denis Mashkevich
-		"mainnet-dnsseed-1.catspa3.org",
+		"mainnet-dnsseed-1.cats3.org",
 		// This DNS seeder is run by Denis Mashkevich
-		"mainnet-dnsseed-2.catspa3.org",
+		"mainnet-dnsseed-2.cats3.org",
 		// This DNS seeder is run by Constantine Bytensky
 		"dnsseed.cbytensky.org",
 		// This DNS seeder is run by Georges Künzli
@@ -295,7 +295,7 @@ var MainnetParams = Params{
 // TestnetParams defines the network parameters for the test Kaspa network.
 var TestnetParams = Params{
 	K:           defaultGHOSTDAGK,
-	Name:        "catspa-testnet-10",
+	Name:        "cats-testnet-10",
 	Net:         appmessage.Testnet,
 	RPCPort:     "16210",
 	DefaultPort: "16211",
@@ -367,7 +367,7 @@ var TestnetParams = Params{
 // just turn into another public testnet.
 var SimnetParams = Params{
 	K:           defaultGHOSTDAGK,
-	Name:        "catspa-simnet",
+	Name:        "cats-simnet",
 	Net:         appmessage.Simnet,
 	RPCPort:     "16510",
 	DefaultPort: "16511",
@@ -427,7 +427,7 @@ var SimnetParams = Params{
 // DevnetParams defines the network parameters for the development Kaspa network.
 var DevnetParams = Params{
 	K:           defaultGHOSTDAGK,
-	Name:        "catspa-devnet",
+	Name:        "cats-devnet",
 	Net:         appmessage.Devnet,
 	RPCPort:     "16610",
 	DefaultPort: "16611",

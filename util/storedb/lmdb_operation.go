@@ -35,7 +35,7 @@ func OpenDBI() {
 		loog.Fatal("Set Max file storage", err)
 	}
 
-	err = Env.Open(home + "/.catspa-explorer", 0, 0644)
+	err = Env.Open(home + "/.cats-explorer", 0, 0644)
 	if err != nil {
 		loog.Fatal("Open Env:", err)
 	}
