@@ -17,14 +17,14 @@ import (
 )
 
 const (
-	defaultLogFilename          = "catspaminer.log"
-	defaultErrLogFilename       = "catspaminer_err.log"
+	defaultLogFilename          = "catsminer.log"
+	defaultErrLogFilename       = "catsminer_err.log"
 	defaultTargetBlockRateRatio = 2.0
 )
 
 var (
 	// Default configuration options
-	defaultAppDir     = util.AppDir("catspaminer", false)
+	defaultAppDir     = util.AppDir("catsminer", false)
 	defaultLogFile    = filepath.Join(defaultAppDir, defaultLogFilename)
 	defaultErrLogFile = filepath.Join(defaultAppDir, defaultErrLogFilename)
 	defaultRPCServer  = "localhost"

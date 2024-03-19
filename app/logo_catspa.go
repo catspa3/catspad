@@ -2,7 +2,7 @@ package app
 
 import "fmt"
 
-func logoCatspa() {
+func logoCats() {
 	fmt.Println(`                                                                                                                                     
                                                                                                                                      
         CCCCCCCCCCCCC               AAA         TTTTTTTTTTTTTTTTTTTTTTT   SSSSSSSSSSSSSSS PPPPPPPPPPPPPPPPP        AAA               

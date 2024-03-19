@@ -18,10 +18,10 @@ func TestCreateDefaultConfigFile(t *testing.T) {
 	if !ok {
 		t.Fatalf("Failed finding config file path")
 	}
-	sampleConfigFile := filepath.Join(filepath.Dir(path), "sample-catspad.conf")
+	sampleConfigFile := filepath.Join(filepath.Dir(path), "sample-catsd.conf")
 
 	// Setup a temporary directory
-	tmpDir, err := ioutil.TempDir("", "catspad")
+	tmpDir, err := ioutil.TempDir("", "catsd")
 	if err != nil {
 		t.Fatalf("Failed creating a temporary directory: %v", err)
 	}
@@ -36,7 +36,7 @@ func TestCreateDefaultConfigFile(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Failed obtaining app path: %v", err)
 	}
-	tmpConfigFile := filepath.Join(appPath, "sample-catspad.conf")
+	tmpConfigFile := filepath.Join(appPath, "sample-catsd.conf")
 	err = ioutil.WriteFile(tmpConfigFile, data, 0644)
 	if err != nil {
 		t.Fatalf("Failed copying sample config file: %v", err)

@@ -176,7 +176,7 @@ func getBlockForMining(mineWhenNotSynced bool) (*externalapi.DomainBlock, *pow.S
 		}
 		if !isSynced && !mineWhenNotSynced {
 			if shouldLog {
-				log.Warnf("Catspad is not synced. Skipping current block template")
+				log.Warnf("Catsd is not synced. Skipping current block template")
 			}
 			time.Sleep(sleepTimeWhenNotSynced)
 			continue
