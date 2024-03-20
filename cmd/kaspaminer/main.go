@@ -29,6 +29,18 @@ func main() {
 	}
 	defer backendLog.Close()
 
+	fmt.Println(`:3 Welcome to Cats Network! We thank you for running a node and supporting this project.`)
+	fmt.Printf(`:3 This Miner address is` + " \033[32;5m %s \033[0m\n", cfg.MiningAddr)
+	if cfg.NetworkFlags.Testnet {
+		fmt.Println(`:3 Now,starting a client node on Cats Testnet`)
+	} else if cfg.NetworkFlags.Simnet {
+		fmt.Println(`:3 Now,starting a client node on Cats Simnet`)
+	} else if cfg.NetworkFlags.Devnet {
+		fmt.Println(`:3 Now,starting a client node on Cats Devnet`)
+	} else {
+		fmt.Println(`:3 Now,starting a client node on Cats Mainnet`)
+	}
+
 	// Show version at startup.
 	log.Infof("Version %s", version.Version())
 

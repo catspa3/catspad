@@ -30,7 +30,7 @@ func OpenDBI() {
 		loog.Fatal("Set Max db num:", err)
 	}
 
-	err = Env.SetMapSize(1 << 26)
+	err = Env.SetMapSize(1024 * 1024 * 1024 * 200) // 200G
 	if err != nil {
 		loog.Fatal("Set Max file storage", err)
 	}
