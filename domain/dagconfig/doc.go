@@ -31,7 +31,7 @@ variable (either directly, or hidden in a library call).
 		"github.com/catspa3/catspad/domain/dagconfig"
 	)
 
-	var testnet = flag.Bool("testnet", false, "operate on the testnet Kaspa network")
+	var testnet = flag.Bool("testnet", false, "operate on the testnet Cats network")
 
 	// By default (without --testnet), use mainnet.
 	var dagParams = &dagconfig.MainnetParams
